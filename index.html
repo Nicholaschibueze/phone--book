@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Phone Book</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+  <div uk-grid class="uk-child-width-expand uk-grid-large uk-margin-xlarge uk-margin-small-left uk-margin-small-right">
+    <div id="root" class="uk-card-small uk-card uk-card-default uk-card-body uk-overflow-auto uk-text-small">
+      <h3 class="uk-card-title">PhoneBook</h3>
+      <table id="table" class="uk-table uk-table-striped uk-table-hover uk-table-small uk-table-middle">
+        <thead>
+          <th class="uk-text-primary uk-text-bold">#</th>
+          <th class="uk-text-primary">Name</th>
+          <th class="uk-text-primary">Email</th>
+          <th class="uk-text-primary">Numbers</th>
+          <th class="uk-text-primary">Address</th>
+          <th class="uk-table-shrink uk-text-primary">Action</th>
+        </thead>
+        <tbody id="tbody">
+          <!-- Table Content Here... -->
+        </tbody>
+        <tfoot>
+          <form id="form">
+            <th>
+              <span uk-icon="icon: plus; ratio: 1.5" />
+            </th>
+            <td>
+              <input class="uk-input uk-form-small" required name="name" type="text" placeholder="Full name" />
+            </td>
+            <td>
+              <input class="uk-input uk-form-small" name="email" type="email" placeholder="Email" />
+            </td>
+            <td>
+              <input class="uk-input uk-form-small" required name="phones" type="text" placeholder="Phone numbers" />
+            </td>
+            <td>
+              <input class="uk-input uk-form-small" name="address" type="text" placeholder="Address" />
+            </td>
+            <td>
+              <input class="uk-button uk-button-default uk-button-small uk-button-primary" name="add" type="submit" value="Save" />
+            </td>
+          </form>
+        </tfoot>
+      </table>
+    </div>
+    </div>
+  </body>
+
+</html>
